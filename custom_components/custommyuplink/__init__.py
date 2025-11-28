@@ -1,15 +1,14 @@
-"""The myUplink integration."""
+"""The CustomMyUplink integration."""
 
 from __future__ import annotations
 
 import asyncio
+import logging
 from datetime import timedelta
 from http import HTTPStatus
-import logging
 
 import aiohttp
 import jwt
-
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_SCAN_INTERVAL
 from homeassistant.core import HomeAssistant
@@ -67,7 +66,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     coordinator = DataUpdateCoordinator(
         hass,
         _LOGGER,
-        name="myUplink",
+        name="CustomMyUplink",
         update_method=async_update_data,
         update_interval=timedelta(seconds=scan_interval),
     )

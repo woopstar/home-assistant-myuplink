@@ -1,4 +1,4 @@
-# MyUplink integration for Home Assistant
+# CustomMyUplink integration for Home Assistant
 
 [![Version](https://img.shields.io/github/v/release/jaroschek/home-assistant-myuplink?label=version)](https://github.com/jaroschek/home-assistant-myuplink/releases/latest)
 [![Validate for HACS](https://github.com/jaroschek/home-assistant-myuplink/workflows/Validate%20for%20HACS/badge.svg)](https://github.com/jaroschek/home-assistant-myuplink/actions/workflows/hacs.yaml)
@@ -19,7 +19,7 @@ The easiest way to install this component is by clicking the badge below, which 
 You can also add the integration manually by copying `custom_components/myuplink` into `<HASS config directory>/custom_components`
 ### Configuration
 
-To use this integration, you need to make an application at [dev.myuplink.com](https://dev.myuplink.com/). 
+To use this integration, you need to make an application at [dev.myuplink.com](https://dev.myuplink.com/).
 
 Remember to set a valid Callback Url. Make sure you use `https://my.home-assistant.io/redirect/oauth`, as HA currently uses that callback URL by default for the Oauth2 config flow.
 

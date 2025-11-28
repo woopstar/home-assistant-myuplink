@@ -6,7 +6,7 @@ from enum import StrEnum
 
 from homeassistant.const import Platform
 
-DOMAIN = "myuplink"
+DOMAIN = "custommyuplink"
 
 OAUTH2_AUTHORIZE = "https://api.myuplink.com/oauth/authorize"
 OAUTH2_TOKEN = "https://api.myuplink.com/oauth/token"
